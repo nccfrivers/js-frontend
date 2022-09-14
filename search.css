@@ -1,0 +1,54 @@
+
+
+.mx-auto {
+    width: 100%;
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+.form-select {
+    height: 60px;
+    width: 25%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    flex: 1 1 auto;
+    display: block;
+    padding: .375rem 2.25rem .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #848E9F;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.form-control {
+    margin-left: -1px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    flex: 1 1 auto;
+    padding: .375rem .75rem;
+    border: 1px solid #ced4da;
+
+}
+.btn {
+    width: 25%;
+    border: 0;
+    color: #fff;
+    background-color: #1D2A4D;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 1rem;
+    flex: 1 1 auto;
+    cursor: pointer;
+}
