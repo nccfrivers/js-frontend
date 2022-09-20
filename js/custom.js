@@ -17,7 +17,6 @@ class NavHeader extends HTMLElement {
                                 <li class="menu_list"><a href="#" class="menu_links active">HOME</a></li>
                                 <li class="menu_list"><a href="#" class="menu_links">ABOUT US</a></li>
                                 <li class="menu_list"><a href="#" class="menu_links">GALLERY</a></li>
-                               <!-- <li class="menu_list"><a href="#" class="menu_links">GALLARY</a></li> -->
                                 <li class="menu_list"><a href="#" class="menu_links">BLOG</a></li>
                                 <li class="menu_list"><a href="#" class="menu_links">ZONES</a></li>
                                 <li class="menu_list"><a href="#" class="menu_links">EVENTS</a></li>
