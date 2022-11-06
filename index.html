@@ -6,41 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NCCF Rivers - Homepage</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./swiper/package/swiper-bundle.css">
+
+    <style>
+        /* .swiper {
+            width: calc(100% - 20%);
+            height: calc(100vh - 4rem);
+            border: 1px solid blue;
+        }
+        .swiper-slide {
+            width: 100%;
+            height: 100%;
+        } */
+        .swiper-slide  {
+            width: 100%;
+            height: initial;
+            padding: 0px 50px;
+        }
+    </style>
 </head>
 <body>
 
     <!-- Header -->
     <nav-header></nav-header>
-    
-    <!-- <header>
-        <nav>
-            <div class="nav_container container">
-                <div class="logo">
-                    <img class="img1" src="./img/image 1.png" alt="">
-                    <img class="img2" src="./img/image 3.png" alt="" srcset="">
-                </div>
-                <div class="nav_menu">
-                    <ul class="menu">
-                        <li class="menu_list"><a href="#" class="menu_links active">HOME</a></li>
-                        <li class="menu_list"><a href="#" class="menu_links">ABOUT US</a></li>
-                        <li class="menu_list"><a href="#" class="menu_links">GALLERY</a></li>
-                        <li class="menu_list"><a href="#" class="menu_links">BLOG</a></li>
-                        <li class="menu_list"><a href="#" class="menu_links">ZONES</a></li>
-                        <li class="menu_list"><a href="#" class="menu_links">EVENTS</a></li>
-                        <li class="menu_list"><a href="#" class="menu_links">CONTACT US</a></li>
-                    </ul>
-                    <div class="denote">
-                        <a href="" class="denote_btn">DONATE</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header> -->
 
     <main>
 
         <section class="welcome_page">
-            <div class="container">
+            <div class="container welcome_cont">
                 <div class="content">
                     <h2 class="greeting">Welcome</h2>
                     <h1 class="state_title">NCCF RIVERS STATE</h1>
@@ -72,23 +65,47 @@
             </div>
         </section>
 
-        <section class="address">
-            <div class="address_container">
-                <div class="content">
-                    <img src="./img/image 6.png" alt="" srcset="">
-                    <div class="text">
-                        <h2>WELCOME ADDRESS </h2>
-                        <p>I sought the LORD, and He answered me and delivered me from all my fears. 
-                            Those who look to Him are radiant, and their faces shall never be ashamed. 
-                            Oh, taste and see that the LORD is good! Blessed is the man who takes refuge in Him!
-                        </p>
-                        <div class="author">
-                            <p class="post">State President</p>
-                            <span></span>
-                            <p class="name">Kadri B. John</p>
+        <section class="address section-slide">
+            <div class="swiper1">
+                <div class="swiper-wrapper address_container">
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <img src="./img/president.png" alt="" srcset="">
+                            <div class="text">
+                                <h2>WELCOME ADDRESS </h2>
+                                <p>I sought the LORD, and He answered me and delivered me from all my fears. 
+                                    Those who look to Him are radiant, and their faces shall never be ashamed. 
+                                    Oh, taste and see that the LORD is good! Blessed is the man who takes refuge in Him!
+                                </p>
+                                <div class="author">
+                                    <p class="post">State President</p>
+                                    <span></span>
+                                    <p class="name">Kadri B. John</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content">
+                            <img class="genSec" src="./img/Gensec.png" alt="" srcset="">
+                            <div class="text">
+                                <h2>WELCOME ADDRESS </h2>
+                                <p>I sought the LORD, and He answered me and delivered me from all my fears. 
+                                    Those who look to Him are radiant, and their faces shall never be ashamed. 
+                                    Oh, taste and see that the LORD is good! Blessed is the man who takes refuge in Him!
+                                </p>
+                                <div class="author">
+                                    <p class="post">State President</p>
+                                    <span></span>
+                                    <p class="name">Kadri B. John</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
 
@@ -133,57 +150,139 @@
             </div>
         </section>
 
-        <section class="unit">
-            <div class="container">
-                <h2 class="title">NCCF Rivers Unit</h2>
-                <div class="cards">
-                    <div class="card">
+        <section class="unit section-slide">
+            <div class="container swiper">
+                <!-- <h2 class="title">NCCF Rivers Unit</h2> -->
+                <div class="cards swiper-wrapper">
+                    <div class="swiper-slide card">
                         <div class="text">
                             <h3 class="title">Publicity Unit</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <p>Kingdom Gospel needs to reach far and wide. This unit provides the medium of its accomplishment. 
+                                Great is the commission indeed! <br>
+                                (Isa. 52:7; Jer. 36:4-7)
                             </p>
     
                             <div class="btn">
                                 <button>Learn More</button>
+                                <img src="./img/arrow.png" alt="" srcset="">
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="swiper-slide card">
                         <div class="text">
-                            <h3 class="title">Publicity Unit</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <h3 class="title">TOS UNIT <span>(Group of handymen and organising
+                                committee)</span></h3>
+                            <p>Nothing can thrive without organisation and those who organise it. <br>
+                                (Psalms 78:72)
                             </p>
     
                             <div class="btn">
                                 <button>Learn More</button>
+                                <img src="./img/arrow.png" alt="" srcset="">
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="swiper-slide card">
                         <div class="text">
-                            <h3 class="title">Publicity Unit</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <h3 class="title">CHOIR UNIT</h3>
+                            <p>Music touches man's heart, so does kingdom music to God's heart.
+                                The fruit of our lips is best expressed to God if there are people to
+                                lead us to offer it well. Then God comes real to us as we praise and
+                                worship. <br>
+                                (2 Chron. 20:21-22; Neh. 12:27-29)
                             </p>
     
                             <div class="btn">
                                 <button>Learn More</button>
+                                <img src="./img/arrow.png" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="text">
+                            <h3 class="title">MEDICAL UNIT</h3>
+                            <p>Our health is wealth. He has made provisions for us to live up to
+                                longevity in pure and sound health, crowned with peace. Our health
+                                should glorify God <br>
+                                (3 John 1:2; Ps. 91:16)
+                            </p>
+    
+                            <div class="btn">
+                                <button>Learn More</button>
+                                <img src="./img/arrow.png" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="text">
+                            <h3 class="title">USHERING UNIT</h3>
+                            <p>Order is essential. Our God is a God of order. Therefore we should
+                                follow in the same light. Hence the need for the unit. <br> (Gen. 3:22-24)
+                            </p>
+    
+                            <div class="btn">
+                                <button>Learn More</button>
+                                <img src="./img/arrow.png" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="text">
+                            <h3 class="title">DRAMA UNIT</h3>
+                            <p>Our worship reflects his divine, creative image. Drama is a fresh,
+                                innovative expression of his nature in us. Our drama draws God's
+                                presence closer to affect men. <br> (1 John. 1:1)
+                            </p>
+    
+                            <div class="btn">
+                                <button>Learn More</button>
+                                <img src="./img/arrow.png" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="text">
+                            <h3 class="title">VENTURES UNIT</h3>
+                            <p>Wealth and riches are dimensions of powers given from above, but
+                                not for the lazy and idle hand. God doesn't disapprove of kingdom
+                                commerce. <br> (Deut. 8:18; Rev. 5:12)
+                            </p>
+    
+                            <div class="btn">
+                                <button>Learn More</button>
+                                <img src="./img/arrow.png" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide card">
+                        <div class="text">
+                            <h3 class="title">EVANGELISM UNIT</h3>
+                            <p>Soul winning beats the heart of God. The mandate is to save the
+                                whole world so as to keep His heart beating. Despite wealth and
+                                influence, a saved man is the most influential man to God.
+                                <br> (Mark 16:15-20) 
+                            </p>
+    
+                            <div class="btn">
+                                <button>Learn More</button>
+                                <img src="./img/arrow.png" alt="" srcset="">
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
 
         <section class="charge">
             <div class="container">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                <p class="script">I sought the LORD, and He answered me and delivered me from all my fears. 
+                    Those who look to Him are radiant, and their faces shall never be ashamed. 
+                    Oh, taste and see that the LORD is good! Blessed is the man who takes refuge in Him!
                 </p>
+                <p class="script_verse">- Psalms 34:4,5,8</p>
             </div>
         </section>
 
@@ -262,7 +361,9 @@
             </div>
         </section>
 
-        <section class="map"></section>
+        <section class="map">
+            <img src="./img/map.png" alt="" srcset="">
+        </section>
 
 
 
@@ -323,5 +424,87 @@
     <nav-footer></nav-footer>
 
     <script src="./js/custom.js"></script>
+    <script src="./script.js"></script>
+    <script src="./swiper/package/swiper-bundle.js"></script>
+
+    <script>
+        const swiper1 = new Swiper('.swiper1', {
+            // Optional parameters
+            // direction: 'vertical',
+            loop: true,
+            speed: 400,
+            spaceBetween: 10,
+            // slidesPerView: 3,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            autoplay: {
+                enabled: true,
+                delay: 8000,
+                // pauseOnMouseEnter: true,
+                // disableOnInteraction: false,
+            },
+            centerInsufficientSlides: true,
+            speed: 700,
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                hide: true,
+                draggable: false,
+            },
+        });
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            // direction: 'vertical',
+            loop: true,
+            speed: 400,
+            spaceBetween: 10,
+            slidesPerView: 3,
+
+            // If we need pagination
+            pagination: {
+                // el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            // },
+        //    <Swiper 
+        //         breakpoints={{
+        //                 // when windwos width is >= 640px
+        //                 640: {
+        //                     width: 640,
+        //                     slidesPerView: 1,
+        //                 },
+        //                 768: {
+        //                     width: 768,
+        //                     slidesPerView: 1,
+        //                 },
+        //             }} 
+            
+
+        //         {slides}
+        //     </Swiper>
+        });
+
+    </script>
+
 </body>
 </html>

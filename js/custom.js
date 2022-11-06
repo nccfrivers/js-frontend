@@ -9,25 +9,32 @@ class NavHeader extends HTMLElement {
                 <nav>
                     <div class="nav_container container">
                         <div class="logo">
-                        <img class="img1" src="./img/nccf_logo.png" alt="">
-                        <img class="img2" src="./img/nysc_logo.png" alt="" srcset="">
+                            <img class="img1" src="./img/nccf_logo.png" alt="">
+                            <img class="img2" src="./img/nysc_logo.png" alt="" srcset="">
                         </div>
-                        <div class="nav_menu">
-                            <ul class="menu">
-                                <li class="menu_list"><a href="#" class="menu_links active">HOME</a></li>
-                                <li class="menu_list"><a href="#" class="menu_links">ABOUT US</a></li>
-                                <li class="menu_list"><a href="#" class="menu_links">GALLERY</a></li>
-                                <li class="menu_list"><a href="#" class="menu_links">BLOG</a></li>
-                                <li class="menu_list"><a href="#" class="menu_links">ZONES</a></li>
-                                <li class="menu_list"><a href="#" class="menu_links">EVENTS</a></li>
-                                <li class="menu_list"><a href="#" class="menu_links">CONTACT US</a></li>
-                            </ul>
-                            
+                        <!-- toggle btn -->
+                        <div class="nav-toggle" id="nav-toggle">
+                            <img class="menu" src="./icon/Menu2.svg" alt="">
                         </div>
-
-                        <div class="denote">
-                                <a href="" class="denote_btn">DONATE</a>
+                        <div class="nav_menu_item" id="nav_menu_item">
+                            <div class="nav_menu">
+                                <ul class="menu">
+                                    <li class="menu_list"><a href="#" class="menu_links active">HOME</a></li>
+                                    <li class="menu_list"><a href="#" class="menu_links">ABOUT US</a></li>
+                                    <li class="menu_list"><a href="#" class="menu_links">GALLARY</a></li>
+                                    <li class="menu_list"><a href="#" class="menu_links">BLOG</a></li>
+                                    <li class="menu_list"><a href="#" class="menu_links">ZONES</a></li>
+                                    <li class="menu_list"><a href="#" class="menu_links">EVENTS</a></li>
+                                    <li class="menu_list"><a href="#" class="menu_links">CONTACT US</a></li>
+                                </ul>
+                                <div class="denote">
+                                    <a href="" class="denote_btn">DONATE</a>
+                                </div>
                             </div>
+                            <div class="nav-close" id="nav-close">
+                                <img src="./icon/close.svg" alt="">
+                            </div>
+                        </div>
                     </div>
                 </nav>
             </header>
@@ -53,7 +60,7 @@ class NavFooter extends HTMLElement {
                 <ul class="menu">
                     <li class="menu_list"><a href="#" class="menu_links active">HOME</a></li>
                     <li class="menu_list"><a href="#" class="menu_links">ABOUT US</a></li>
-                    <li class="menu_list"><a href="#" class="menu_links">GALLERY</a></li>
+                    <li class="menu_list"><a href="#" class="menu_links">GALLARY</a></li>
                     <li class="menu_list"><a href="#" class="menu_links">BLOG</a></li>
                     <li class="menu_list"><a href="#" class="menu_links">ZONES</a></li>
                     <li class="menu_list"><a href="#" class="menu_links">EVENTS</a></li>

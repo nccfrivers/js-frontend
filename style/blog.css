@@ -1,0 +1,204 @@
+body {
+    background-color: #fff;
+}
+.baptismal {
+    background-color: #fff;
+}
+.baptismal .title {
+    padding-top: 204px;
+}
+.baptismal .title h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    color: #000000;
+}
+.baptismal .title h1::before {
+    content: '';
+    border: 2px solid #000000;
+    width: 199px;
+    display: block;
+}
+.baptismal .title h1::after {
+    content: '';
+    border: 2px solid #000000;
+    width: 120px;
+    display: block;
+}
+.baptismal .content {
+    padding-left: 70px;
+    padding-top: 52px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+.baptismal .content img {
+    max-width: 1129px;
+    width: 100%;
+}
+.baptismal .content .text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 20.04px;
+}
+.baptismal .content .text p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 42px;
+    text-align: justify;
+}
+
+.content_2 {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;
+    align-items: center;
+}
+.content_2 img {
+    max-width: 548px;
+    /* height: 717px; */
+    width: 100%;
+}
+.content_2 .text p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 42px;
+    text-align: justify;
+    padding: 0px 20px;
+}
+
+.quote {
+    background: rgb(238, 238, 238);
+    padding-left: 75.08px;
+    display: flex;
+    margin: 108px 0px 75px;
+}
+.quote::before {
+    content: '';
+    position: relative;
+    background: #F2CA54;
+    width: 7px;
+}
+.quote p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 42px;
+    text-align: justify;
+    color: #033E08;
+    padding-left: 13.92px;
+    width: 90%;
+}
+
+.gallery .grid {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px , 1fr));
+}
+.gallery .grid .one {
+    grid-row: span 2;
+    grid-column: span 2;
+    width: 100%;
+    object-position: center;
+    object-fit: contain;
+}
+.gallery .grid img {
+    object-fit: cover;
+    width: 100%;
+}
+
+/* chronicles */
+.chronicles img {
+    width: 300px;
+}
+
+
+/* trend */
+
+.trend {
+    padding: 73px 0px 49px;
+}
+.trend .trend_content {
+    display: flex;
+    flex-direction: column;
+    gap: 87px;
+}
+.trend .trend_content .trend_items {
+    display: flex;
+}
+.trend .trend_content .images {
+    background: url(../img/trending_img.png);
+    box-shadow: 10px 20px 50px 2px rgba(0, 0, 0, 0.43);
+    max-width: 570px;
+    width: 100%;
+    height: 840px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+}
+.trend .trend_content h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    color: #000000;
+}
+.trend .trend_content h2::after {
+    content: '';
+    border: 3px solid #F2CB54;
+    width: 120px;
+    display: block;
+}
+.trend .trend_content .images .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 60px 82px;
+    row-gap: 40px;
+}
+.trend .trend_content .images .text p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.trend .trend_content .images .text a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    background: #9F8021;
+    text-align: center;
+    display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    .gallery .grid .one {
+        grid-row: span 1;
+        grid-column: span 1;
+        width: 100%;
+        object-position: center;
+        object-fit: contain;
+    }
+    .content {
+        padding-right: 20px;
+        padding-left: 30px;
+    }
+}
