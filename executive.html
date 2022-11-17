@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCCF Rivers_Executive</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style/style_1.css">
+    <link rel="stylesheet" href="./style/executive.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <nav-header></nav-header>
+
+    <section class="home about_home">
+        <div class="bd"></div>
+        <div class="container">
+            <div class="content">
+                <h1>Meet the Executives</h1>
+                <p>Our team is always on stand by, to lend a helping hand, we would love to hear from you.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="leaders">
+        <div class="container">
+            <div class="heading">
+                <h1>Called  to Lead</h1>
+                <p>“You don't have to hold a position in order to be a leader.” <br>
+                    <span>- Henry Ford, founder of the Ford Motor Company</span></p>
+            </div>
+
+            <div class="excecutive_details" id="excecutive_details"></div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <nav-footer></nav-footer>
+
+    <script src="./js/custom.js"></script>
+    <script src="./script.js"></script>
+    <script>
+        let list = "";
+        let name = "";
+        let state = "";
+        let university = "";
+        let course = "";
+        let dob = "";
+        fetch('executive.json')
+        .then(response => response.json())
+        .then(json => {
+            json.executive.forEach(executive => {
+                let user = `
+                <div class="user">
+                    <div class="image">
+                        <img src=${executive.image} alt="" srcset="">
+                    </div>
+                    <div class="details">
+                        <h3 class="post">${executive.post}</h3>
+                        <div class="detail">
+                            <p class="name">${executive.name}</p>
+                            <p class="state">${executive.origin}</p>
+                            <p class="university">${executive.university}"</p>
+                            <p class="course">${executive.course}</p>
+                            <p class="dob">${executive.DOB}</p>
+                        </div>
+                        <p class="abbr">${executive.Abbr}</p>
+                    </div>
+                </div>
+                `
+
+                document.getElementById('excecutive_details').innerHTML += user
+
+                // let position2 = ${executive.position}
+                // console.log(position2);
+                // list += `<li>${executive.name}</li>`
+                // name = document.getElementsByClassName("name");
+                // name.innerHTML = `${executive.name}`;
+            });
+        })
+    </script>
+</body>
+</html>

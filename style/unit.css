@@ -1,0 +1,71 @@
+
+.units {
+    background-color: #fff;
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 50px;
+}
+.card .bg {
+    background-image: url(../img/unit/banner/units.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.card .bg h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 78px;
+    color: #FFFFFF;
+}
+.card .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 300px;
+    position: relative;
+}
+.card .text .logo {
+    width: 350px;
+    position: absolute;
+    top: -185px;
+}
+.card .text .logo img {
+    width: 100%;
+}
+.card .text .body {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    color: #000000;
+    text-align: center;
+}
+.card .text .body span {
+    font-weight: bold;
+}
+.meeting_time {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 48px;
+    color: #000000;
+}

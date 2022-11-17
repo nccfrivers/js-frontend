@@ -100,13 +100,14 @@ nav {
 }
 .logo .img1 {
     position: relative;
-    z-index: 1;
+    z-index: 10;
     width: 40px;
 }
 .logo .img2 {
     position: absolute;
     left: 28px;
     width: 40px;
+    z-index: 1;
 }
 .nav-toggle, .nav-close {
     display: none;
@@ -502,15 +503,11 @@ nav {
 .unit .card {
     background: url(./img/unit_img.png) no-repeat;
     width: 500px;
-    padding-bottom: 50px;
     padding-left: 36px;
     padding-right: 30px;
     border-radius: 10px;
-    padding-top: 250px;
     background-position: center;
     background-size: cover;
-    /* min-width: 350px; */
-    /* width: 100px; */
 }
 .unit .card .text h3 {
     font-family: 'Poppins';
@@ -731,7 +728,7 @@ footer .container .title .text  h1 {
     font-family: 'Secular One';
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 52px;
     color: #FFFFFF;
 }
@@ -770,7 +767,7 @@ footer .container .title .text  h1 {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 36px;
     color: #FFFFFF;
 }
@@ -798,7 +795,7 @@ footer .container .title .text  h1 {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px;
     color: #FFFFFF;
 }
@@ -814,7 +811,7 @@ footer .container .title .text  h1 {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px;
     text-align: center;
     color: #FFFFFF;
@@ -909,7 +906,6 @@ footer .container .title .text  h1 {
     .nav_menu {
         flex-direction: column;
         width: 100%;
-        background-color: #000;
         height: auto;
         padding-bottom: 35px;
     }
@@ -922,21 +918,21 @@ footer .container .title .text  h1 {
     }
     .nav_container .nav_menu_item {
         position: absolute;
-        /* top: 100px; */
-        left: 0px;
-        max-width: 100%;
+        right: 0px;
+        max-width: 90%;
         width: 100%;
         margin: 0 auto;
-        /* left: -100%; */
         background-color: #00000087;
-        /* top: 50px; */
-        padding-top: 50px;
         transition: 500ms all ease-out;
-        top: 50px;
+        top: -600px;
+        padding-top: 100px;
+        background: #000;
+        box-shadow: gray 5px 0px 20px 5px;
+        border-radius: 0px 0px 0px 20px;
     }
     .nav_container .nav_menu_item .nav-close img {
         position: absolute;
-        top: -30px;
+        top: 20px;
         left: 92.5%;
         z-index: 100;
     }
@@ -950,8 +946,7 @@ footer .container .title .text  h1 {
         width: 100%;
     }
     .show-menu {
-        /* left: 0px !important; */
-        top: -500px;
+        top: 0px !important;
     }
     .charge .script {
         font-size: 22px;

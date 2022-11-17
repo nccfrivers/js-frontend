@@ -9,15 +9,6 @@
     <link rel="stylesheet" href="./swiper/package/swiper-bundle.css">
 
     <style>
-        /* .swiper {
-            width: calc(100% - 20%);
-            height: calc(100vh - 4rem);
-            border: 1px solid blue;
-        }
-        .swiper-slide {
-            width: 100%;
-            height: 100%;
-        } */
         .swiper-slide  {
             width: 100%;
             height: initial;
@@ -365,60 +356,7 @@
             <img src="./img/map.png" alt="" srcset="">
         </section>
 
-
-
     </main>
-
-    <!-- <footer>
-        <section class="footer_container container">
-            <div class="title">
-                <div class="logo">
-                    <img class="img1" src="./img/image 1.png" alt="">
-                    <img class="img2" src="./img/image 3.png" alt="" srcset="">
-                </div>
-                <div class="text"><h1>NCCF RIVERS STATE CHAPTER</h1></div>
-            </div>
-            <div class="footer_links">
-                <ul class="menu">
-                    <li class="menu_list"><a href="#" class="menu_links active">HOME</a></li>
-                    <li class="menu_list"><a href="#" class="menu_links">ABOUT US</a></li>
-                    <li class="menu_list"><a href="#" class="menu_links">GALLERY</a></li>
-                    <li class="menu_list"><a href="#" class="menu_links">BLOG</a></li>
-                    <li class="menu_list"><a href="#" class="menu_links">ZONES</a></li>
-                    <li class="menu_list"><a href="#" class="menu_links">EVENTS</a></li>
-                    <li class="menu_list"><a href="#" class="menu_links">CONTACT US</a></li>
-                </ul>
-                <div class="contact">
-                    <p class="cont_us">CONTACT US</p>
-                    <p>Email: info@nccfrivers.org</p>
-                    <p>Phone: (+234) 9023859483</p>
-                    <p>Address: 206A, Ordinance Road, Trans-Amadi, Port Harcourt</p>
-                </div>
-                <div class="socials">
-                    <div class="social_link">
-                        <img src="./img/instagram_colored.png" alt="" srcset="">
-                        <p>instagram</p>
-                    </div>
-                    <div class="social_link">
-                        <img src="./img/facebook_colored.png" alt="" srcset="">
-                        <p>facebook</p>
-                    </div>
-                    <div class="social_link">
-                        <img src="./img/twitter_colored.png" alt="" srcset="">
-                        <p>twitter</p>
-                    </div>
-                    <div class="social_link">
-                        <img src="./img/youtube-icon_colored.png" alt="" srcset="">
-                        <p>Youtube</p>
-                    </div>
-                </div>
-            </div>
-
-            <span class="footer_line"></span>
-
-            <p class="reserved"><span>@</span> NCCF Rivers State Chapter | All Rights Reserved </p>
-        </section>
-    </footer> -->
 
     <!-- footer -->
     <nav-footer></nav-footer>
@@ -482,26 +420,34 @@
                 prevEl: '.swiper-button-prev',
             },
 
-            // And if we need scrollbar
-            // scrollbar: {
-            //     el: '.swiper-scrollbar',
-            // },
-        //    <Swiper 
-        //         breakpoints={{
-        //                 // when windwos width is >= 640px
-        //                 640: {
-        //                     width: 640,
-        //                     slidesPerView: 1,
-        //                 },
-        //                 768: {
-        //                     width: 768,
-        //                     slidesPerView: 1,
-        //                 },
-        //             }} 
-            
-
-        //         {slides}
-        //     </Swiper>
+            breakpoints: {
+                
+                //when window width is >= 640px
+                300: {
+                    width: 300,
+                    slidesPerView: 1,
+                },
+                //when window width is >= 640px
+                400: {
+                    width: 400,
+                    slidesPerView: 1,
+                },
+                //when window width is >= 640px
+                500: {
+                    width: 500,
+                    slidesPerView: 1,
+                },
+                //when window width is >= 640px
+                640: {
+                    width: 640,
+                    slidesPerView: 1,
+                },
+                // when window width is >= 768px
+                768: {
+                    width: 768,
+                    slidesPerView: 2,
+                },
+            },
         });
 
     </script>
