@@ -19,13 +19,13 @@ class NavHeader extends HTMLElement {
                         <div class="nav_menu_item" id="nav_menu_item">
                             <div class="nav_menu">
                                 <ul class="menu">
-                                    <li class="menu_list"><a href="#" class="menu_links active">HOME</a></li>
-                                    <li class="menu_list"><a href="#" class="menu_links">ABOUT US</a></li>
+                                    <li class="menu_list"><a href="../index.html" class="menu_links active">HOME</a></li>
+                                    <li class="menu_list"><a href="../about.html" class="menu_links">ABOUT US</a></li>
                                     <li class="menu_list"><a href="#" class="menu_links">GALLARY</a></li>
                                     <li class="menu_list"><a href="#" class="menu_links">BLOG</a></li>
                                     <li class="menu_list"><a href="#" class="menu_links">ZONES</a></li>
                                     <li class="menu_list"><a href="#" class="menu_links">EVENTS</a></li>
-                                    <li class="menu_list"><a href="#" class="menu_links">CONTACT US</a></li>
+                                    <li class="menu_list"><a href="../contact.html" class="menu_links">CONTACT US</a></li>
                                 </ul>
                                 <div class="denote">
                                     <a href="" class="denote_btn">DONATE</a>

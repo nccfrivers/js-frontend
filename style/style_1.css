@@ -204,7 +204,7 @@
     background-repeat: no-repeat;
     background-position: right;
     background-position-y: center;
-    height: 100vh;
+    height: 60vh;
 }
 .body {
     background-color: #fff;
@@ -212,7 +212,6 @@
 .body .content .origin {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 50px;
 }
@@ -268,6 +267,7 @@
 .body .fellowship .fellowship_detail {
     background: #F3F3F3;
     padding-top: 26px;
+    padding-bottom: 20px;
 }
 .fellowship_items {
     max-width: 90%;
@@ -348,6 +348,21 @@
     display: flex;
     padding: 54px 0px 89px 0px;
     gap: 30px;
+    width: 100%;
+    justify-content: space-between;
+}
+.other .img {
+    width: 50%;
+}
+.other .img img {
+    width: 100%;
+}
+.other .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px 0px 0px;
+    width: 50%;
 }
 .other .text p {
     font-family: 'Poppins';
@@ -382,10 +397,12 @@
 .ruggae .rural_text, .ruggae .purpose {
     background: rgba(53, 53, 53, 0.71);
     border-radius: 0px 0px 50px 0px;
-    width: 626px;
-    height: 231px;
     display: flex;
     align-items: center;
+    max-width: 626px;
+    width: 100%;
+    position: relative;
+    padding: 20px 40px 30px 0px;
 }
 .ruggae .quote .para1{
     font-family: 'Poppins';
@@ -454,7 +471,6 @@
 
 .youtube_link {
     position: relative;
-    padding-top: 63px;
 }
 .youtube_link a {
     position: absolute;
@@ -526,10 +542,42 @@
     }
 }
 
+@media only screen and (max-width: 1110px) {
+    .other {
+        align-items: center;
+    }
+    .other .img {
+        max-width: 550px;
+        width: 100%;
+    }
+    .other .text {
+        width: 100%;
+        max-width: 550px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .body .content .origin .text {
+        max-width: 100%;
+    }
+    .body .content .origin {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .other {
+        flex-wrap: wrap;
+    }
+    .other .img {
+        max-width: 100%;
+        padding: 0px 50px;
+    }
+    .other .text {
+        text-align: center;
+        padding: 0px 40px;
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 768px) {}
 @media only screen and (max-width: 768px) {
-    /* .home {
-        background-repeat: repeat;
-    } */
     .home .content{
         align-items: center;
     }
@@ -538,5 +586,10 @@
     }
     .form .form_detail .img {
         display: none;
+    }
+
+    .body .content .origin .text h2,
+    .body .content .origin .text h3 {
+        text-align: center;
     }
 }
